@@ -1,0 +1,23 @@
+Univeristy-5th-Semester-Project-WEBENGINERING
+Overview: A Library Management System for a university, created as a Web Engineering semester project (PHP/MySQL). It handles book inventories, member accounts, and book borrowing.
+
+Features:
+
+Admin Dashboard: An admin login (loginadmin_server_page.php) leads to a dashboard. Admins can add new library members (addpersonserver_page.php), manage books (data_class.php likely contains classes for books), and view lending stats.
+User Login: Regular users or library members can log in (login_server_page.php) to see available books and borrow them.
+Database Integration: A db.php file manages connections to MySQL. Tables likely include books, members, and loans.
+Search/Display: The main page (index.php) probably lists books available. Users can search or filter by category.
+Styling: Custom CSS in stylesheet.css styles the UI, possibly with a clean dashboard layout.
+Setup Instructions:
+
+Clone: Download into your PHP server folder.
+Database: Create a database (e.g. library_db). SQL tables should include:
+members (member info, login credentials),
+books (title, author, copies),
+loans (which member has borrowed which book).
+Configure: Edit db.php with your DB credentials.
+Run: First, open loginadmin_server_page.php to log in as admin (credentials set in DB). Add some books/members. Then test login_server_page.php for member login. Members can borrow/return books via the UI.
+Usage:
+
+Admin: Create accounts for library members, add books to the catalog, and monitor who borrowed books.
+Member: Log in and check out available books; the system will update inventory counts.
